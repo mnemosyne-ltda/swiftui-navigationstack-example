@@ -8,17 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		0C224E4128F0590A0022B435 /* NavStackExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C224E4028F0590A0022B435 /* NavStackExampleApp.swift */; };
-		0C224E4328F0590A0022B435 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C224E4228F0590A0022B435 /* ContentView.swift */; };
 		0C224E4528F0590C0022B435 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C224E4428F0590C0022B435 /* Assets.xcassets */; };
 		0C224E4828F0590C0022B435 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C224E4728F0590C0022B435 /* Preview Assets.xcassets */; };
+		0C224E5028F065EB0022B435 /* Computer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C224E4F28F065EB0022B435 /* Computer.swift */; };
+		0C3E43B028F4461D0072631C /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3E43AF28F4461D0072631C /* Router.swift */; };
+		0C3E43BC28F84E940072631C /* MyView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3E43BB28F84E940072631C /* MyView1.swift */; };
+		0C3E43BE28F84F620072631C /* MyView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3E43BD28F84F620072631C /* MyView2.swift */; };
+		0C3E43C028F84F6E0072631C /* MyView3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3E43BF28F84F6E0072631C /* MyView3.swift */; };
+		0C3E43C228F851420072631C /* MyView4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3E43C128F851420072631C /* MyView4.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0C224E3D28F0590A0022B435 /* NavStackExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NavStackExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C224E4028F0590A0022B435 /* NavStackExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavStackExampleApp.swift; sourceTree = "<group>"; };
-		0C224E4228F0590A0022B435 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0C224E4428F0590C0022B435 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C224E4728F0590C0022B435 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0C224E4F28F065EB0022B435 /* Computer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Computer.swift; sourceTree = "<group>"; };
+		0C3E43AF28F4461D0072631C /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		0C3E43BB28F84E940072631C /* MyView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyView1.swift; sourceTree = "<group>"; };
+		0C3E43BD28F84F620072631C /* MyView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyView2.swift; sourceTree = "<group>"; };
+		0C3E43BF28F84F6E0072631C /* MyView3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyView3.swift; sourceTree = "<group>"; };
+		0C3E43C128F851420072631C /* MyView4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyView4.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +61,10 @@
 		0C224E3F28F0590A0022B435 /* NavStackExample */ = {
 			isa = PBXGroup;
 			children = (
+				0C3E43AE28F446100072631C /* Routes */,
+				0C224E5128F068530022B435 /* Views */,
+				0C224E4E28F065DF0022B435 /* Models */,
 				0C224E4028F0590A0022B435 /* NavStackExampleApp.swift */,
-				0C224E4228F0590A0022B435 /* ContentView.swift */,
 				0C224E4428F0590C0022B435 /* Assets.xcassets */,
 				0C224E4628F0590C0022B435 /* Preview Content */,
 			);
@@ -65,6 +77,33 @@
 				0C224E4728F0590C0022B435 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0C224E4E28F065DF0022B435 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0C224E4F28F065EB0022B435 /* Computer.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0C224E5128F068530022B435 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0C3E43BB28F84E940072631C /* MyView1.swift */,
+				0C3E43BD28F84F620072631C /* MyView2.swift */,
+				0C3E43BF28F84F6E0072631C /* MyView3.swift */,
+				0C3E43C128F851420072631C /* MyView4.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0C3E43AE28F446100072631C /* Routes */ = {
+			isa = PBXGroup;
+			children = (
+				0C3E43AF28F4461D0072631C /* Router.swift */,
+			);
+			path = Routes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +176,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C224E4328F0590A0022B435 /* ContentView.swift in Sources */,
+				0C224E5028F065EB0022B435 /* Computer.swift in Sources */,
+				0C3E43C228F851420072631C /* MyView4.swift in Sources */,
+				0C3E43BC28F84E940072631C /* MyView1.swift in Sources */,
+				0C3E43B028F4461D0072631C /* Router.swift in Sources */,
+				0C3E43BE28F84F620072631C /* MyView2.swift in Sources */,
+				0C3E43C028F84F6E0072631C /* MyView3.swift in Sources */,
 				0C224E4128F0590A0022B435 /* NavStackExampleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,7 +311,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"NavStackExample/Preview Content\"";
-				DEVELOPMENT_TEAM = L5C36X97NN;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -282,6 +326,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kuma.NavStackExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -296,7 +343,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"NavStackExample/Preview Content\"";
-				DEVELOPMENT_TEAM = L5C36X97NN;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -311,6 +358,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kuma.NavStackExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
